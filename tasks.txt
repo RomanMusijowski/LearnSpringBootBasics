@@ -1,0 +1,8 @@
+Spring-Boot
+1. Generate new project with https://start.spring.io/
+2. Manually add new maven dependency to existing project and use it in code
+3. Add new entity
+4. Add new Repository for new entity
+5. Add new Service and service implementation for new entity
+6. Add new Controller for new entity
+7. Add CRUD REST API (create, read, update, delete) for new entity
