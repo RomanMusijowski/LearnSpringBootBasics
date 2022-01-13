@@ -12,4 +12,13 @@ ec2 virtual mashine
 kubernetes cluser (sth big) 
     it contains a lot of nodes
         can run a lot of pods/containers
+
+
+Create Pull Request (new code)
+    Resolve conflicts
+        Run CI/CD (on Jenkins, Github, Gitlab) run unit/integration tests
+            Code review (somebody checks your code)
+            Refactor (your code updates)
+                Get approve
+                    Merge
         
