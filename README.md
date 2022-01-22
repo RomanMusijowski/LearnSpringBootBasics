@@ -16,9 +16,10 @@ kubernetes cluser (sth big)
 
 Create Pull Request (new code)
     Resolve conflicts
-        Run CI/CD (on Jenkins, Github, Gitlab) run unit/integration tests
+        Run CI/CD (on Jenkins, Github, Gitlab) run unit/integration tests "mvn clean package"
             Code review (somebody checks your code)
             Refactor (your code updates)
                 Get approve
                     Merge
         
+

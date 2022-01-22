@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  learn-spring-service:
+    build: .
+    container_name: learn-spring-service
+    image: learn-spring-service:latest
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://learn-db:5432/learnSpring
+    ports:
+      - 8080:8080
+    restart: on-failure
+    depends_on:
+      - learn-db
+
+  learn-db:
+    image: postgres
+    container_name: learn-db
+    restart: on-failure
+    environment:
+      - POSTGRES_USER=dev
+      - POSTGRES_PASSWORD=dev
+      - POSTGRES_DB=learnSpring
+    ports:
+      - 5432:5432
