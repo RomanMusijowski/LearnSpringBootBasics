@@ -1,11 +1,11 @@
 ###
-POST http://localhost:8080/api/user
+POST http://172.18.0.3:8080/api/user
 Content-Type: application/json
 
 {
-  "username": "username2",
+  "username": "username3",
   "password": "password",
-  "email": "email2",
+  "email": "email4",
   "firstName": "firstName",
   "lastName": "lastName"
 }

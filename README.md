@@ -3,7 +3,7 @@
 ```dockerfile
 
 docker pull postgres
-docker run -d --name learnSpring -e POSTGRES_USER=dev -e POSTGRES_PASSWORD=dev -e POSTGRES_DB=learnSpring --port 5432:5432 postgres
+docker run -d --name learnSpring -e POSTGRES_USER=dev -e POSTGRES_PASSWORD=dev -e POSTGRES_DB=learnSpring -p 5432:5432 postgres
 ```
 
 
@@ -22,4 +22,9 @@ Create Pull Request (new code)
                 Get approve
                     Merge
         
+
+Build docker image
+RUN:
+mvn clean package
+docker build . -t learnSpringBasics:latest 
 

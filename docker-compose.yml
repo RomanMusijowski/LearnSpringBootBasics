@@ -3,8 +3,8 @@ version: '2'
 services:
   learn-spring-service:
     build: .
-    container_name: learn-spring-service
     image: learn-spring-service:latest
+    container_name: learn-spring-service
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://learn-db:5432/learnSpring
     ports:
